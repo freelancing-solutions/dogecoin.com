@@ -23,6 +23,7 @@
     <meta property="og:title" content="Dogecoin" />
     <meta property="og:description" content="Dogecoin is an open source peer-to-peer digital currency, favored by Shiba Inus worldwide." />
     <meta property="og:image" content="https://dogecoin.com/assets/img/dogecoin-300.png" />
+    <meta name="theme-color" content="#1e4151">
     <title>Dogecoin</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -51,10 +52,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#wallets">Wallets</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#wallets"><span data-i18n="dgc-wallets">Wallets</span></a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about"><span data-i18n="dgc-what-is-doge">What is dogecoin</span></a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#start"><span data-i18n="dgc-get-started-now">How to get started</span></a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="guide.html"><span data-i18n="dgc-guide">Guide</span></a></li>
+		    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="support.html"><span data-i18n="dgc-support">Support</span></a></li>
                 </ul>
             </div>
         </div>
@@ -129,7 +131,7 @@
                     </div>
                     <div class="col-md-12 col-lg-12 mb-5">
                         <div class="mx-auto">
-                            <p class="lead">Android Wallet</p>
+                            <p class="lead" data-i18n="dgc-android-wallet">Android Wallet</p>
                             <a href="https://play.google.com/store/apps/details?id=de.langerhans.wallet&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1" target="_blank" class="img-holder" aria-label="Get it on Google Play">
                                 <img style="max-width: 150px;" src="assets/img/google_play.png" alt="">
                             </a>
@@ -169,7 +171,7 @@
                         <br>
                         <a class="btn btn-secondary mb-2" target="_blank" href="https://discord.gg/dogecoin">
                             <i class="fab fa-discord mr-2"></i>
-                            <span>Discord Community</span>
+                            <span data-i18n="dgc-discord">Discord Community</span>
                         </a>
                         <br>
                         <a class="btn btn-outline-secondary" target="_blank" href="https://www.reddit.com/r/dogeducation">
@@ -211,7 +213,7 @@
             <!-- Portfolio Grid Items-->
             <div class="row justify-content-center">
                 <div class="col-md-4 col-sm-6 mt-5">
-                    <img style="width:100%;" src="assets/img/dogecoin_mobilewallet.png">
+                    <img style="width:100%;" src="assets/img/dogecoin_mobilewallet.png" alt="Dogecoin Mobile Wallet">
                 </div>
                 <div class="col-md-8 col-sm-6 mt-4">
                  <p class="lead">1. <span data-i18n="dgc-choose-wallet">Pick a Wallet</span></p>
@@ -224,9 +226,9 @@
                         <br><br>
                         <span data-i18n="dgc-exchanges-modal-tipped">You can get tipped Dogecoin by participating in <a class="btn btn-sm btn-outline-secondary js-scroll-trigger" href="#about">our community</a>
                             <br>
-                            If that's not your style, another way to have your first Dogecoin is to participate at Folding@Home.</span>
+                            If that's not your style, another way to have your first Dogecoin is to participate at <a href="https://www.dogecoinfah.com/">Dogecoin Folding@Home</a>.</span>
                         <br><br>
-                        <span data-i18n="dgc-exchanges-modal-fah-faq">Folding@Home (FaH) is a distributed computing project. You can join team dogefolders, bring in your computing power and receive some Doges for your efforts.</span>
+			<span data-i18n="dgc-exchanges-modal-fah-faq">Folding@Home (FaH) is a distributed computing project. You can join team dogefolders, bring in your computing power and receive some Dogecoins for your efforts. Please note any reward is paid by the Dogecoin Folding@Home team. The Folding@Home project is not affiliated with Dogecoin.</span>
                         <!-- Sorry, we are on AuxPoW now...
                         <br><br>
                         <span data-i18n="dgc-exchanges-modal-mining">You can also get Dogecoin by "mining" it. Mining is when you use your computer to process Dogecoin transactions by other people, and in return you get Dogecoin.</span>
@@ -244,7 +246,11 @@
             <div class="row">
                 <!-- Footer Location-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
-                    <a href="#wallets" class="btn btn-lg btn-outline-light js-scroll-trigger">Get Wallet</a>
+                    <a href="#wallets" class="btn btn-lg btn-outline-light js-scroll-trigger">
+                        <span data-i18n="dgc-get-wallet">
+                        Get Wallet
+                        </span>
+                    </a>
                 </div>
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
@@ -262,8 +268,13 @@
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                           <li><a class="dropdown-item select-lang" data-lang="en">English</a></li>
                           <li><a class="dropdown-item select-lang" data-lang="de">Deutsch</a></li>
-                          <li><a class="dropdown-item select-lang" data-lang="fr">Français</a></li>
                           <li><a class="dropdown-item select-lang" data-lang="es">Español</a></li>
+                          <li><a class="dropdown-item select-lang" data-lang="fr">Français</a></li>
+                          <li><a class="dropdown-item select-lang" data-lang="it">Italiano</a></li>
+                          <li><a class="dropdown-item select-lang" data-lang="hi">Hindi</a></li>
+                          <li><a class="dropdown-item select-lang" data-lang="id">Bahasa Indonesia</a></li>
+                          <li><a class="dropdown-item select-lang" data-lang="mr">Marathi</a></li>
+                          <li><a class="dropdown-item select-lang" data-lang="tr">Türkçe</a></li>
                       </div>
                     </div>
                 </div>
@@ -275,7 +286,7 @@
         <div class="container">
             <small>Copyright © The Ðogecoin Project 2021</small>
             <br>
-            <small data-i18n="dgc-footer-credits">Created by <a href="https://ummjackson.com" target="_blank">Jackson Palmer</a> &amp; <a href="https://twitter.com/BillyM2k" target="_blank">Shibetoshi Nakamoto</a>. Website Design by <a href="https://www.reddit.com/user/edswf1" target="_blank">/u/edswf1</a>. Logo by <a href="http://christinemix.com" target="_blank">Christine Ricks</a>.</small>
+            <small data-i18n="dgc-footer-credits">Created by <a href="https://ummjackson.com" target="_blank" class="footerlink">Jackson Palmer</a> &amp; <a href="https://twitter.com/BillyM2k" target="_blank" class="footerlink">Shibetoshi Nakamoto</a>. Website Design by <a href="https://www.reddit.com/user/edswf1" target="_blank" class="footerlink">/u/edswf1</a>. Logo by <a href="http://christinemix.com" target="_blank" class="footerlink">Christine Ricks</a>.</small>
         </div>
     </div>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
